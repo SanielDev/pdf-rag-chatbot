@@ -4,19 +4,21 @@ A Streamlit-based chatbot that lets you query PDF files using Retrieval-Augmente
 
 ## 🚀 Features
 
-- Upload PDF
-- Embeds text using `sentence-transformers`
-- Stores vectors in local `ChromaDB`
-- Uses HuggingFace inference API to answer questions
-- Fully local + free LLM endpoint
+- Upload any resume PDF 📄
+- Parses and chunks documents using LangChain
+- Uses `ParentDocumentRetriever` for hierarchical chunking
+- Embeds using `sentence-transformers`
+- Stores vectors locally with ChromaDB
+- Answers powered by Hugging Face's `Mixtral-8x7B-Instruct` endpoint
+- Returns answers with source snippets ✨
 
 ## 🧩 Tech Stack
 
-- `Streamlit` UI
-- `ChromaDB` for vector storage
-- `LangChain` for chaining + QA
-- `Sentence-Transformers` for embeddings
-- `FLAN-T5` or similar HuggingFace LLM endpoint
+- 🖥 **Streamlit** – UI for chat interface
+- 🧠 **LangChain** – for RAG logic and document parsing
+- 🔍 **ChromaDB** – local vector store
+- 🧩 **Sentence-Transformers** – text embeddings
+- 🤖 **Mixtral-8x7B-Instruct** – HuggingFace-hosted LLM (free tier)
 
 ## 🛠 Setup
 
